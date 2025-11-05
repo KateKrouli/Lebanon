@@ -1,0 +1,127 @@
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    background: #F2F2F2;
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    &__container {
+        border-radius: 28px;
+        background: #FFF;
+        padding: 16px;
+    }
+
+    &__banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 175px;
+        background: url(images/banner.png) center/cover no-repeat;
+        border-radius: 16px;
+        font-family: "Hedvig Letters Serif", serif;
+        color: #F00;
+        text-align: center;
+        font-size: 65px;
+        font-weight: 400;
+        line-height: 81.25px; 
+        text-transform: uppercase;
+
+         @media (max-width: 767px) {
+            height: 50px;
+            font-size: 40px;
+         }
+    }
+
+    &__content {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 31px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__document {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        max-width: calc(50% - 15px);
+        padding: 12px 0;
+
+        @media (max-width: 767px) {
+            order: 0;
+            max-width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 12px 0;
+        flex: 1;
+        gap: 30px  ;
+
+        @media (max-width: 767px) {
+            order: 1;
+        }
+    }
+
+    &__text {
+        &--1 {
+            color: #D31624;
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 32.4px; 
+                @media (max-width: 767px) {
+                            font-size: 19px;
+                }
+        }
+
+        &--2 {
+            display: flex;
+            align-items: center;
+            color: #188C3F;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px; 
+
+            @media (max-width: 767px) {
+                            font-size: 17px;
+                }
+
+
+            svg {
+                margin: auto;
+            } 
+        }
+    }
+
+    &__contacts {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 16px;
+            @media (max-width: 767px) {
+                            font-size: 14px;
+                }
+
+        }
+    }
+}
